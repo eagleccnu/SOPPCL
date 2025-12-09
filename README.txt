@@ -62,7 +62,7 @@ Data Preparation
 2. Test set:
    - ./pdb_test/{pdb}.pdb
    - ./nmrstar/{bmrb_id}.str
-   - ./embedding_hmm_10/{pdb}.dat
+   - ./esm_hmm_10/{pdb}.dat
 
 Default test proteins:
 1PD7, 1WRS, 1WRT, 1Z9B, 2JWT, 2L6B, 2LUO, 2M3O, 2XDI, 4AAI

@@ -32,6 +32,7 @@ Repository Structure
 modules.py              - Core modules: VAE, Augmentation, BiLSTM
 contrastive_module.py   - Pre-train contrastive learning
 regression_module.py    - Train regression model for S²
+data_preprocessing.py   - Generate .dat features from FASTA (ESM-2 + HMM)
 predict.py              - Evaluate on independent test proteins
 utils.py                - PDB/BMRB parsing utilities
 README.txt
@@ -49,6 +50,15 @@ Required packages
 - matplotlib  - 3.9.2
 - Bio  - 1.78
 - pynmrstar  - 3.3.4
+
+Additional requirements for preprocessing:
+
+- esm (for ESM-2 embeddings)
+- hh-suite (hhblits, hhmake)
+
+Note:
+HH-suite (3.3.0) and database (uniprot20_2013_03) must be installed and added to PATH.
+The ESM-2 model (esm2_t33_650M_UR50D) will be automatically downloaded when first used.
 
 ----------------------------------------------------------------------
 Data Preparation
